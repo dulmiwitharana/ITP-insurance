@@ -1,0 +1,35 @@
+ .container{
+    max-width: 500px; 
+    margin: 50px auto;
+   
+ }
+ .register{
+    margin-bottom: 10px;
+ }
+ .form {
+    background-color:#fefefe; 
+    color: #0e0909; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #0b51e9;
+    max-width: 500px; 
+}
+
+.form .form-group {
+    margin-bottom: 15px; 
+}
+
+
+.form .btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+
+.form .btn-primary:hover {
+    background-color: #0056b3; 
+    border-color: #0056b3; 
+}
+  
+
+ 
