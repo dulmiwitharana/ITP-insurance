@@ -9,6 +9,7 @@
     font-size: 2rem;
     color: #0b51e9;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
   .search-container {

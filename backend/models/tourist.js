@@ -6,6 +6,7 @@ const touristSchema = new Schema({
     name: {
         type : String,
         required: true
+        
     },
     age: {
         type : Number,

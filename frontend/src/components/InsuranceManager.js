@@ -25,7 +25,7 @@ export default function InsuranceManager() {
     const onDelete = (id) => {
         axios.delete(`http://localhost:8000/tourist/delete/${id}`)
             .then((res) => {
-                alert("Delete Successful");
+                alert("Insurance Profile Delete Successful");
                 setTourists(tourists.filter(tourist => tourist._id !== id));
             })
             .catch((err) => {
@@ -72,6 +72,7 @@ export default function InsuranceManager() {
             <table className="table">
                 <thead>
                     <tr>
+                        
                         <th>Name</th>
                         <th>Age</th>
                         <th>Country</th>

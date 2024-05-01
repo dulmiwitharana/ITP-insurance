@@ -24,7 +24,7 @@ export default function Displaytourist() {
     const onDelete = (id) => {
         axios.delete(`http://localhost:8000/tourist/delete/${id}`)
             .then((res) => {
-                alert("Delete Successful");
+                alert("Insurance Profile Delete Successful");
                 setTourists(tourists.filter(tourist => tourist._id !== id));
             })
             .catch((err) => {

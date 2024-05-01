@@ -1,38 +1,7 @@
 const router = require("express").Router();
 let Tourist = require("../models/tourist");
 
-// add insured tourist 
-// router.route("/add").post((req,res)=>{
-//     const name = req.body.name;
-//     const age = Number(req.body.age);
-//     const country = req.body.country;
-//     const gender = req.body.gender;
-//     const ipackage = req.body.ipackage;
-//     const period=req.body.period;
-//     const destination = req.body.destination;
-//    const tripStartDate=new Date(req.body.tripStartDate);
-//    const tripEndDate =new Date(req.body.tripEndDate);
 
-//     const newInTourist = new Tourist({
-//         name,
-//         age,
-//         country,
-//         gender,
-//         ipackage,
-//         period,
-//         destination,
-//        tripStartDate,
-//        tripEndDate
-//     })
-
-//     newInTourist.save().then(()=>{
-//         res.json("Insured Tourist Added")
-//     }).catch((err)=>{
-//         console.log(err);
-//         res.status(500).json({ error: "An error occurred while saving the tourist data" });
-//     })
-
-// })
 function validateTouristData(req, res, next) {
     const { name, age, country, gender, ipackage, period, destination, tripStartDate, tripEndDate } = req.body;
 
@@ -41,9 +10,7 @@ function validateTouristData(req, res, next) {
         return res.status(400).json({ error: "All fields are required" });
     }
 
-    // Additional validations can be added here based on specific requirements
-
-    // If all validations pass, proceed to the next middleware or route handler
+   
     next();
 }
 
